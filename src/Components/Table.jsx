@@ -60,13 +60,15 @@ const customStyles = {
   },
   headRow: {
     style: {
-      backgroundColor: "#f2f2f2", // Background color of the header row
+      backgroundColor: "#f2f2f2",
+      fontSize: "20px", // Background color of the header row
     },
   },
   headCells: {
     style: {
       fontWeight: "bold",
-      justifyContent: "center", // Font weight of header cells
+      justifyContent: "center",
+      fontSize: "20px", // Font weight of header cells
     },
   },
   cells: {
@@ -74,7 +76,8 @@ const customStyles = {
       padding: "8px",
       display: "flex",
       justifyContent: "center",
-      alignItems: "center", // Adjust cell padding as needed
+      alignItems: "center",
+      fontSize: "20px", // Adjust cell padding as needed
     },
   },
 };
