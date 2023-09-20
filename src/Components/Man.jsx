@@ -11,7 +11,7 @@ function Main({ file }) {
         const response = await fetch(`/csvFiles/${file}`);
         if (response.ok) {
           const textData = await response.text();
-
+          console.log(textData);
           const results = [];
 
           Papa.parse(textData, {
@@ -31,8 +31,10 @@ function Main({ file }) {
         console.error(`Error reading ${file}:`, error);
       }
     };
-
     fetchData();
+    if(csvData[0].length <= 0) {
+      fetchData();
+    }
   }, [file]);
 
   return (
