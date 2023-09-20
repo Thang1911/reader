@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* styles.css */
+
+/* Định dạng danh sách dữ liệu */
+.data-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+/* Định dạng mỗi phần tử dữ liệu */
+.data-item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
+/* Định dạng tên dữ liệu */
+.data-name {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+/* Định dạng hình ảnh */
+.data-image {
+  max-width: 150px;
+  max-height: 150px;
+}

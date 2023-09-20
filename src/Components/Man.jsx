@@ -37,7 +37,7 @@ function Main({ file }) {
   return (
     <div>
       <h3>Data from File {file}</h3>
-      <Table data={csvData[0]} />
+      <Table dataFile={csvData[0]} />
     </div>
   );
 }
