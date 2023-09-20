@@ -28,7 +28,7 @@ function App() {
       {csvFiles.map((file, index) => (
         <div key={index}>
           <Main file={file} />
-          <p>-----------------------</p>
+          <p>----------------------------</p>
         </div>
       ))}
     </div>
