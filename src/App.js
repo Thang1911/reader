@@ -3,7 +3,6 @@ import "./App.css";
 import Main from "./Components/Man";
 
 const csvFiles = [
-  "empty.csv",
   "Skchaunoi.csv",
   "skchiatay.csv",
   "skConLapGiaDinh.csv",
@@ -26,15 +25,17 @@ const csvFiles = [
 function App() {
   return (
     <div>
-      {csvFiles && (
+      {csvFiles && csvFiles.length > 0 ? (
         <div className="App">
           {csvFiles.map((file, index) => (
             <div key={index}>
               <Main file={file} />
-              <p>----------------------------</p>
+              {index < csvFiles.length - 1 && <hr />}{" "}
             </div>
           ))}
         </div>
+      ) : (
+        <div className="App">Không có tệp CSV nào.</div>
       )}
     </div>
   );
