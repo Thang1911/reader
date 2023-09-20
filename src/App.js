@@ -3,6 +3,7 @@ import "./App.css";
 import Main from "./Components/Man";
 
 const csvFiles = [
+  "empty.csv",
   "Skchaunoi.csv",
   "skchiatay.csv",
   "skConLapGiaDinh.csv",
