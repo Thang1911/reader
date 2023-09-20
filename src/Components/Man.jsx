@@ -32,6 +32,7 @@ function Main({ file }) {
         console.error(`Error reading ${file}:`, error);
       }
     };
+    fetchData();
   }, [file]);
 
   return (
