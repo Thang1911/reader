@@ -4,6 +4,7 @@ import Table from "./Table";
 
 function Main({ file }) {
   const [csvData, setCsvData] = useState([]);
+  const [dataFetched, setDataFetched] = useState(false); // Sử dụng biến này để kiểm tra xem dữ liệu đã được fetch hay chưa
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,6 +25,7 @@ function Main({ file }) {
 
           console.log(results);
           setCsvData(results);
+          setDataFetched(true); // Đặt biến dataFetched thành true khi dữ liệu đã được fetch thành công
         } else {
           console.error(`Error reading ${file}: HTTP ${response.status}`);
         }
@@ -31,11 +33,12 @@ function Main({ file }) {
         console.error(`Error reading ${file}:`, error);
       }
     };
-    fetchData();
-    if(csvData[0].length <= 0) {
+
+    // Chỉ fetch dữ liệu khi dataFetched là false hoặc csvData[0].length <= 0
+    if (!dataFetched || csvData[0].length <= 0) {
       fetchData();
     }
-  }, [file]);
+  }, [file, csvData, dataFetched]);
 
   return (
     <div>
