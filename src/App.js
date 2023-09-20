@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Main from "./Components/Man";
 
 const csvFiles = [
-  //"Skchaunoi.csv",
+  "Skchaunoi.csv",
   "skchiatay.csv",
   "skConLapGiaDinh.csv",
   "skDudoancontuonglai.csv",

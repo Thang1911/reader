@@ -11,7 +11,6 @@ function Main({ file }) {
         const response = await fetch(`/csvFiles/${file}`);
         if (response.ok) {
           const textData = await response.text();
-          console.log(textData);
           const results = [];
 
           Papa.parse(textData, {
@@ -23,7 +22,7 @@ function Main({ file }) {
           });
 
           console.log(results);
-          setCsvData(results[0]);
+          setCsvData(results);
 
         } else {
           console.error(`Error reading ${file}: HTTP ${response.status}`);
@@ -38,7 +37,7 @@ function Main({ file }) {
   return (
     <div>
       <h3>Data from File {file}</h3>
-      <Table data={csvData} />
+      <Table data={csvData[0]} />
     </div>
   );
 }
