@@ -85,3 +85,17 @@
     background-position: 200% 0;
   }
 }
+
+.custom-button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
