@@ -60,12 +60,11 @@
 .data-image {
   width: 100px;
   height: 180px;
+  /* margin-right: -0.3999999px; */
 }
 
-.data-image-1 {
-  max-width: 150px;
-  max-height: 150px;
-  margin-left: 10px;
+.data-item:hover {
+  transform: scale(2.0);
 }
 
 .skeleton {
