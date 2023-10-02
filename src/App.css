@@ -58,8 +58,8 @@
 }
 
 .data-image {
-  max-width: 150px;
-  max-height: 150px;
+  width: 100px;
+  height: 180px;
 }
 
 .data-image-1 {

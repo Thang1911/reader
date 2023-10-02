@@ -53,6 +53,9 @@ const Filedisplay = () => {
         >
           Trang trước
         </button>
+        <Link to="/">
+          <button className="custom-button">Trở về trang chính</button>
+        </Link>
         <button
           className="custom-button"
           onClick={handleNextFile}
@@ -60,9 +63,6 @@ const Filedisplay = () => {
         >
           Trang tiếp theo
         </button>
-        <Link to="/">
-          <button className="custom-button">Trở về trang chính</button>
-        </Link>
       </div>
     </div>
   );
