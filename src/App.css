@@ -58,13 +58,13 @@
 }
 
 .data-image {
-  width: 100px;
-  height: 180px;
+  /* width: 100px;
+  height: 180px; */
   /* margin-right: -0.3999999px; */
 }
 
 .data-item:hover {
-  transform: scale(1.6);
+  /* transform: scale(1.6); */
 }
 
 .skeleton {
