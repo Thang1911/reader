@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
 
 const csvFiles = [
@@ -7,6 +7,7 @@ const csvFiles = [
   "skConLapGiaDinh.csv",
   "skDudoancontuonglai.csv",
   "skGapNhau.csv",
+  "skhaihuoc.csv",
   "skhanhphuc.csv",
   "skkethon.csv",
   "sklyhon.csv",
@@ -33,6 +34,6 @@ const Home = () => {
       ))}
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

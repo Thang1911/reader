@@ -8,6 +8,7 @@ const csvFiles = [
   "skConLapGiaDinh.csv",
   "skDudoancontuonglai.csv",
   "skGapNhau.csv",
+  "skhaihuoc.csv",
   "skhanhphuc.csv",
   "skkethon.csv",
   "sklyhon.csv",
@@ -20,6 +21,7 @@ const csvFiles = [
   "skToTinh.csv",
   "skTuoiGia.csv",
   "skvohoacchongchettruoc.csv",
+
 ];
 
 const Filedisplay = () => {
