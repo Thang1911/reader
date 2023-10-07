@@ -3,6 +3,7 @@ import Main from "./Man";
 import { useParams, Link } from "react-router-dom";
 
 const csvFiles = [
+  "skaocuoi.csv",
   "Skchaunoi.csv",
   "skchiatay.csv",
   "skConLapGiaDinh.csv",
@@ -21,7 +22,6 @@ const csvFiles = [
   "skToTinh.csv",
   "skTuoiGia.csv",
   "skvohoacchongchettruoc.csv",
-
 ];
 
 const Filedisplay = () => {

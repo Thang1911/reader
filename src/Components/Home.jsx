@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const csvFiles = [
+  "skaocuoi.csv",
   "Skchaunoi.csv",
   "skchiatay.csv",
   "skConLapGiaDinh.csv",
